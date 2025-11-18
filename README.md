@@ -43,7 +43,7 @@ Type Alias অনেক বেশি flexible । Union type, tuple, function ty
 
 <h1>Blog Post 2 : What is the use of the keyof keyword in TypeScript?</h1>
 
-keyof keyword TypeScript-এ ব্যবহার করা হয় কোনো type বা interface-এর সব property name বের করার জন্য।
+keyof keyword TypeScript এ ব্যবহার করা হয় কোনো type বা interface-এর সব property name বের করার জন্য।
 মানে, এটা object-এর key গুলোকে নিয়ে একটা union type বানায়।
 
 এটা খুব সহজ একটা Example দেখলেই বোঝা যাবে।
@@ -83,7 +83,7 @@ type Chanku = keyof Jhankar;
 "name" | "age" | "profession" | "cseStudent"
 
 
-মানে—এটা শুধু key গুলো রাখবে, value না।
+মানে এটা শুধু key গুলো রাখবে, value না।
 ঝংকার ভাইয়ের টাইপ থেকে key বের করে চাংকু ভাইয়ের টাইপ তৈরি!
 
 আর আটাই বাস্তব হা হা হা.....
