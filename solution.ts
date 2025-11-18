@@ -18,8 +18,6 @@ function formatValue(Input: string | number | boolean) {
 
 
 
-
-
 function getLength(Input: string | unknown[]): number {
     if (typeof Input === 'string') {
         return Input.length
@@ -32,6 +30,7 @@ function getLength(Input: string | unknown[]): number {
     const ex: never = Input;
     return ex;
 }
+
 
 
 
@@ -70,7 +69,6 @@ function filterActiveUsers(Input: { id: number, name: string, email: string, isA
 
 
 
-
 interface Book {
     title: string
     author: string
@@ -85,25 +83,30 @@ function printBookDetails(Input: Book) {
 
 
 
-
-
-
 function getUniqueValues<T extends string | number>(array1: T[], array2: T[]) {
     const result: T[] = []
+    function exists(value: T): boolean {
 
+        for (let i = 0; i < result.length; i++) {
+            if (result[i] === value) {
+                return true;
+            }
+        }
+        return false;
+    }
     for (let item of array1) {
-        if (!result.includes(item)) {
+        if (!exists(item)) {
             result.push(item);
         }
     }
-
     for (let item of array2) {
-        if (!result.includes(item)) {
+        if (!exists(item)) { 
             result.push(item);
         }
     }
     return result;
 }
+
 
 
 
@@ -117,12 +120,10 @@ interface Product {
     discount?: number;
 }
 
+function calculateTotalPrice(Input: Product[]) {
 
-function calculateTotalPrice(Input: Product[]){
-
-    return Input.reduce((total , product)=>{
-        console.log(total,product);
-        if(product.discount !== undefined && (product.discount < 0 || product.discount > 100)){
+    return Input.reduce((total, product) => {
+        if (product.discount !== undefined && (product.discount < 0 || product.discount > 100)) {
             throw new Error(`Discount for "${product.name}" must be between 0 and 100`);
         }
 
@@ -130,6 +131,6 @@ function calculateTotalPrice(Input: Product[]){
         const discountedTotal = product.discount ? productTotal * (1 - product.discount / 100) : productTotal;
 
         return total + discountedTotal
-    } , 0)
+    }, 0)
 
 }
