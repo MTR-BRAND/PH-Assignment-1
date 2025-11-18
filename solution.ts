@@ -60,7 +60,6 @@ function filterByRating(Input: { title: string, rating: number }[]) {
 
 
 
-
 function filterActiveUsers(Input: { id: number, name: string, email: string, isActive: boolean }[]): { id: number, name: string, email: string, isActive: boolean }[] {
     return Input.filter(item => (item.isActive === true))
 }
