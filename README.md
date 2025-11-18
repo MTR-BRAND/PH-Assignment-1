@@ -54,6 +54,8 @@ keyof keyword TypeScript এ ব্যবহার করা হয় কোন
 
 এটা খুব সহজ একটা Example দেখলেই বোঝা যাবে।
 
+<hr>
+
 Example => ধরো, ঝংকার ভাইয়ার একটা Interface আছে:
 
 interface Jhankar {
