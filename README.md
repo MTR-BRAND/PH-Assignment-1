@@ -8,6 +8,8 @@ ii.Type Alias
 
 এদের কাজ প্রায় এক বলেই চলে কিন্তু দাড়াও এদের মধ্যে কিছু গুরুত্বপূর্ণ পার্থক্য আছে।
 
+<hr>
+
 ১. Interface
 
 Definition: Interface মূলত একটি object এর structure define করার জন্য ব্যবহৃত হয়। এটি class এর সাথেও ব্যবহার করতে পারি।
