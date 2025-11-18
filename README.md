@@ -1,4 +1,4 @@
-Blog Post 1 : What are some differences between interfaces and types in TypeScript?
+#Blog Post 1 : What are some differences between interfaces and types in TypeScript?
 
 TypeScript মূলত JavaScript এর উপর ভিত্তি করে তৈরি। এটি আমাদের variable, function, এবং object এর জন্য type নির্ধারণের সুযোগ দেয়। TypeScript-এ আমরা মূলত দুইভাবে object বা custom type define করতে পারি:
 
@@ -37,11 +37,11 @@ Type Alias অনেক বেশি flexible । Union type, tuple, function ty
 
 
 
+<hr>
 
 
 
-
-Blog Post 2 : What is the use of the keyof keyword in TypeScript?
+#Blog Post 2 : What is the use of the keyof keyword in TypeScript?
 
 keyof keyword TypeScript-এ ব্যবহার করা হয় কোনো type বা interface-এর সব property name বের করার জন্য।
 মানে, এটা object-এর key গুলোকে নিয়ে একটা union type বানায়।
