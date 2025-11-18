@@ -2,9 +2,8 @@
 
 TypeScript মূলত JavaScript এর উপর ভিত্তি করে তৈরি। এটি আমাদের variable, function, এবং object এর জন্য type নির্ধারণের সুযোগ দেয়। TypeScript-এ আমরা মূলত দুইভাবে object বা custom type define করতে পারি:
 
-i/Interface
-
-ii/Type Alias
+i.Interface
+ii.Type Alias
 
 এদের কাজ প্রায় এক বলেই চলে কিন্তু দাড়াও এদের মধ্যে কিছু গুরুত্বপূর্ণ পার্থক্য আছে।
 
